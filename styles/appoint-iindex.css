@@ -1,0 +1,1001 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: 'Poppins';
+}
+
+
+.frame-child {
+    height: 5.563rem;
+    width: 90rem;
+    position: relative;
+    background-color: var(--neutrals-14);
+    display: none;
+    max-width: 100%;
+  }
+  .image-4-icon {
+    height: 3.5rem;
+    width: 2.125rem;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .div,
+  .government-of-national {
+    position: relative;
+    font-weight: 500;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .div {
+    z-index: 2;
+  }
+  .govt-name-hindi {
+    flex-direction: row;
+    padding: 0 var(--padding-12xs);
+    font-size: 0.875rem;
+    font-family: var(--font-anek-devanagari);
+  }
+  .content-header,
+  .govt-info,
+  .govt-name-hindi,
+  .image-4-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .govt-info {
+    align-self: stretch;
+    flex-direction: column;
+  }
+  .content-header,
+  .image-4-parent {
+    max-width: 100%;
+  }
+  .content-header {
+    flex: 1;
+    flex-direction: column;
+    padding: var(--padding-8xs) 0 0;
+    box-sizing: border-box;
+  }
+  .image-4-parent {
+    width: 22.938rem;
+    flex-direction: row;
+    gap: var(--gap-6xs);
+  }
+  .image-5-icon {
+    align-self: stretch;
+    height: 2.263rem;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .service-image-wrapper {
+    width: 7.563rem;
+    border-radius: 1.54px;
+    background-color: var(--neutrals-14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-6xs-2) var(--padding-7xs) var(--padding-6xs-2) 0.625rem;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .image-6-icon {
+    align-self: stretch;
+    height: 2.356rem;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .service-image-two {
+    width: 4.938rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 0 0.243rem;
+    box-sizing: border-box;
+  }
+  .service-links {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .rectangle-parent,
+  .services {
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  .services {
+    width: 16.188rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: var(--padding-11xs) 0 0;
+  }
+  .rectangle-parent {
+    align-self: stretch;
+    background-color: var(--neutrals-14);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.312rem var(--padding-52xl) var(--padding-xs) var(--padding-56xl);
+    top: 0;
+    z-index: 99;
+    position: sticky;
+    max-width: 100%;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--color-black);
+    font-family: var(--font-roboto);
+  }
+  .app-name-child {
+    height: 5rem;
+    width: 90rem;
+    position: relative;
+    background-color: var(--color-darkslateblue-200);
+    display: none;
+    max-width: 100%;
+  }
+  .sarva,
+  .svastha {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    min-width: 4.438rem;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .svastha {
+    min-width: 6.25rem;
+  }
+  .app-name-part-two,
+  .app-name-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .app-name-part-two {
+    flex-direction: row;
+    padding: 0 0 0 1.437rem;
+    margin-top: -0.688rem;
+    color: var(--primary-02);
+  }
+  .app-name-wrapper {
+    flex-direction: column;
+  }
+  .home {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    min-width: 3.75rem;
+    z-index: 1;
+  }
+  .appointment-scheduler,
+  .help-support {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .help-support {
+    text-decoration: none;
+    font-weight: 300;
+    color: inherit;
+    white-space: pre-wrap;
+  }
+  .navigation,
+  .navigation-links {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .navigation-links {
+    width: 33.875rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .navigation {
+    width: 46.813rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 0.875rem;
+    box-sizing: border-box;
+    font-size: var(--font-size-3xl);
+  }
+  .loginregister {
+    text-decoration: none;
+    position: relative;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--primary-01);
+    text-align: left;
+    display: inline-block;
+    min-width: 7.438rem;
+  }
+  .auth,
+  .auth-link {
+    display: flex;
+    align-items: flex-start;
+  }
+  .auth-link {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-2xs) 1.625rem;
+    background-color: var(--neutrals-13);
+    border-radius: 12.17px;
+    flex-direction: row;
+    justify-content: flex-start;
+    z-index: 1;
+  }
+  .auth-link:hover {
+    background-color: #d1d1d1;
+  }
+  .auth {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 var(--padding-7xs);
+  }
+  .app-name {
+    align-self: stretch;
+    background-color: var(--color-darkslateblue-200);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0.812rem var(--padding-56xl) var(--padding-xs) 3.875rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: var(--gap-xl);
+  }
+  .appointment-type-links-child {
+    width: 23.313rem;
+    height: 53.438rem;
+    position: relative;
+    background-color: var(--color-darkslateblue-100);
+    display: none;
+    max-width: 100%;
+  }
+  .new-appointment {
+    position: relative;
+    font-size: var(--font-size-5xl);
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--neutrals-13);
+    text-align: left;
+  }
+  .appointment-type-buttons {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-5xs) var(--padding-lgi);
+    background-color: var(--color-darkslateblue-200);
+    align-self: stretch;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .appointment-type-buttons:hover {
+    background-color: #33578f;
+  }
+  .appointment-status {
+    position: relative;
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    font-weight: 500;
+  }
+  .appointment-type-buttons1,
+  .appointment-type-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .appointment-type-buttons1 {
+    align-self: stretch;
+    border-radius: var(--br-2xs);
+    flex-direction: row;
+    padding: var(--padding-5xs) var(--padding-lgi);
+    z-index: 2;
+  }
+  .appointment-type-links {
+    height: 53.438rem;
+    width: 23.313rem;
+    background-color: var(--color-darkslateblue-100);
+    flex-direction: column;
+    padding: var(--padding-91xl) 0 var(--padding-91xl) var(--padding-56xl);
+    box-sizing: border-box;
+    gap: 2rem;
+    min-width: 23.313rem;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .book-your-appointment,
+  .department {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: 0.05em;
+    font-family: inherit;
+  }
+  .book-your-appointment {
+    line-height: 3.25rem;
+    font-size: 2.75rem;
+    font-weight: 500;
+    display: inline-block;
+    max-width: 100%;
+  }
+  .department {
+    line-height: 120%;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .department-label {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-5xs);
+    flex-shrink: 0;
+  }
+  .select-department {
+    align-self: stretch;
+    height: 1.813rem;
+    position: relative;
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .department-dropdown {
+    width: 15.938rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-6xs) 0 0;
+    box-sizing: border-box;
+  }
+  .material-symbolsarrow-drop-do-icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .department-input {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--neutrals-14);
+    border: 1.5px solid var(--neutrals-07);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--padding-10xs-5) var(--padding-2xs) var(--padding-10xs-5)
+      var(--padding-5xs);
+    min-height: 2.75rem;
+    gap: var(--gap-xl);
+    flex-shrink: 0;
+    font-size: var(--font-size-lg);
+    color: var(--neutrals-04);
+  }
+  .learn-more {
+    font-weight: 600;
+    color: #305cba;
+  }
+  .to-know-info-container {
+    position: relative;
+    letter-spacing: 0.05em;
+    line-height: 1.25rem;
+  }
+  .department-info,
+  .department-selection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .department-info {
+    flex-direction: row;
+    padding: 0 var(--padding-5xs);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+  }
+  .department-selection {
+    align-self: stretch;
+    height: 6.875rem;
+    flex-direction: column;
+    gap: 0.468rem;
+  }
+  .hospital {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+    min-width: 7.688rem;
+    white-space: nowrap;
+  }
+  .provider-type-items {
+    align-self: stretch;
+    height: 5.188rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .doctor {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+    min-width: 6.188rem;
+    white-space: nowrap;
+  }
+  .doctor-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-6xs);
+    flex-shrink: 0;
+  }
+  .select-appointment-date {
+    color: var(--color-black);
+  }
+  .select-appointment-date-container {
+    margin: 0;
+    height: 2.125rem;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+  }
+  .date-label {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-6xs);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .fluentcalendar-48-regular-icon {
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .ddmmyyyy {
+    height: 1.813rem;
+    width: 15.938rem;
+    position: relative;
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .date-value-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: var(--padding-5xs) 0 0;
+  }
+  .date-display {
+    flex: 1;
+    border-radius: var(--br-5xs);
+    background-color: var(--neutrals-14);
+    border: 1.5px solid var(--neutrals-04);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-11xs) var(--padding-5xs);
+    min-width: 16.313rem;
+    min-height: 2.75rem;
+    max-width: 100%;
+  }
+  .date-input,
+  .date-selection {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .date-input {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-3xs);
+    font-size: var(--font-size-lg);
+    color: var(--neutrals-04);
+  }
+  .date-selection {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 var(--padding-8xs);
+    box-sizing: border-box;
+    gap: var(--gap-5xs);
+  }
+  .back {
+    position: relative;
+    font-size: var(--font-size-xl);
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--primary-01);
+    text-align: left;
+    display: inline-block;
+    min-width: 3.063rem;
+  }
+  .navigation-options {
+    cursor: pointer;
+    border: 1px solid var(--primary-01);
+    padding: var(--padding-7xs) 1.875rem var(--padding-7xs) var(--padding-12xl);
+    background-color: var(--neutrals-14);
+    border-radius: var(--br-xs);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .navigation-options:hover {
+    background-color: #e6e6e6;
+    border: 1px solid #2666ba;
+    box-sizing: border-box;
+  }
+  .next {
+    position: relative;
+    font-size: var(--font-size-xl);
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--neutrals-13);
+    text-align: left;
+    display: inline-block;
+    min-width: 2.875rem;
+  }
+  .navigation-options1 {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-5xs) var(--padding-12xl);
+    background-color: var(--color-darkslateblue-100);
+    border-radius: var(--br-xs);
+    justify-content: flex-start;
+  }
+  .navigation-options1:hover {
+    background-color: #2e73c4;
+  }
+  .navigation-buttons,
+  .navigation-controls,
+  .navigation-options1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .navigation-controls {
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .navigation-buttons {
+    align-self: stretch;
+    justify-content: flex-end;
+  }
+  .provider-type-dropdown,
+  .provider-type-options {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .provider-type-options {
+    width: 30rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 0 0 var(--padding-xl);
+    box-sizing: border-box;
+    gap: 1.937rem;
+  }
+  .provider-type-dropdown {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: var(--font-size-9xl);
+    color: var(--color-red);
+  }
+  .provider-type,
+  .provider-type-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .provider-type-input {
+    align-self: stretch;
+    gap: 1.75rem;
+  }
+  .provider-type {
+    width: 33.875rem;
+    padding: var(--padding-8xs) 0 0;
+    box-sizing: border-box;
+    min-width: 33.875rem;
+  }
+  .hospitals-near-you {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: 0.05em;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: inherit;
+  }
+  .solarhospital-line-duotone-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .apollo-hospital {
+    position: relative;
+    letter-spacing: 0.05em;
+    line-height: 120%;
+  }
+  .hospital-card-one-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-3xs);
+    font-size: var(--font-size-5xl);
+  }
+  .address-59-street,
+  .contact-00xx00xx {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+  }
+  .address-59-street {
+    line-height: 120%;
+  }
+  .contact-00xx00xx {
+    line-height: 1.375rem;
+  }
+  .hospital-card-one-content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-6xl);
+  }
+  .hospital-card-one {
+    flex: 1;
+    border-radius: var(--br-5xs);
+    background-color: var(--neutrals-13);
+    border: 1.5px solid var(--neutrals-09);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-lgi) var(--padding-3xl);
+  }
+  .hospital-cards {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 var(--padding-11xs) 0 var(--padding-7xs);
+    font-size: var(--font-size-lg);
+  }
+  .hospital-card-two,
+  .hospital-cards,
+  .hospital-list-header {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+  }
+  .hospital-list-header {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--gap-6xs);
+    font-size: var(--font-size-11xl);
+  }
+  .hospital-card-two {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 var(--padding-11xs) 0 0.187rem;
+  }
+  .hospital-card-three-details {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--neutrals-13);
+    border: 1.5px solid var(--neutrals-09);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-lgi) var(--padding-3xl);
+  }
+  .see-more {
+    position: relative;
+    letter-spacing: 0.05em;
+    line-height: 1.375rem;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 5.25rem;
+  }
+  .view-more {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: var(--neutrals-04);
+  }
+  .hospital-card-three-content {
+    width: 17.188rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.25rem;
+  }
+  .hospital-card-three {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 var(--padding-12xs) 0 var(--padding-7xs);
+  }
+  .hospital-list {
+    width: 17.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    min-width: 17.625rem;
+    font-size: var(--font-size-lg);
+  }
+  .provider-selection {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: var(--gap-xl);
+  }
+  .booking-form,
+  .booking-header {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .booking-form {
+    flex-direction: row;
+    padding: 0 0 0 1rem;
+    box-sizing: border-box;
+    font-size: var(--font-size-11xl);
+  }
+  .booking-header {
+    flex-direction: column;
+    gap: var(--gap-3xs);
+  }
+  .appointment-booking,
+  .appointment-types,
+  .appointment-usecase-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-roboto);
+  }
+  .appointment-booking {
+    flex: 1;
+    flex-direction: column;
+    padding: 2rem 0 0;
+    box-sizing: border-box;
+    min-width: 38.563rem;
+    max-width: 100%;
+    font-size: 3.5rem;
+    color: var(--color-black);
+  }
+  .appointment-types,
+  .appointment-usecase-1 {
+    color: var(--neutrals-13);
+  }
+  .appointment-types {
+    width: 86.688rem;
+    flex-direction: row;
+    padding: 0 var(--padding-xl) 0 0;
+    box-sizing: border-box;
+    gap: 2.812rem;
+    max-width: 100%;
+    font-size: var(--font-size-5xl);
+  }
+  .appointment-usecase-1 {
+    width: 100%;
+    position: relative;
+    background-color: var(--neutrals-13);
+    overflow: hidden;
+    flex-direction: column;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: var(--font-size-9xl);
+  }
+  @media screen and (max-width: 1225px) {
+    .app-name {
+      flex-wrap: wrap;
+    }
+    .appointment-type-links {
+      flex: 1;
+    }
+    .appointment-types {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .hospital-list,
+    .provider-type {
+      flex: 1;
+    }
+    .provider-selection {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .government-of-national,
+    .govt-name-hindi {
+      display: none;
+    }
+    .rectangle-parent {
+      padding-left: var(--padding-18xl);
+      padding-right: 2.188rem;
+      box-sizing: border-box;
+    }
+    .navigation-links {
+      flex-wrap: wrap;
+    }
+    .app-name {
+      padding-left: var(--padding-12xl);
+      padding-right: var(--padding-18xl);
+      box-sizing: border-box;
+    }
+    .book-your-appointment {
+      font-size: 2.813rem;
+      line-height: 3.375rem;
+    }
+    .provider-type-options {
+      gap: 0.938rem;
+    }
+    .provider-type-input {
+      gap: 2.375rem;
+    }
+    .provider-type {
+      min-width: 100%;
+    }
+    .hospitals-near-you {
+      font-size: var(--font-size-5xl);
+      line-height: 1.813rem;
+    }
+    .appointment-booking {
+      min-width: 100%;
+    }
+    .appointment-types {
+      gap: 1.375rem;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .div {
+      display: none;
+    }
+    .sarva,
+    .svastha {
+      font-size: var(--font-size-3xl);
+    }
+    .appointment-scheduler,
+    .help-support,
+    .home {
+      font-size: var(--font-size-lg);
+    }
+    .appointment-status {
+      font-size: var(--font-size-lgi);
+      line-height: 1.438rem;
+    }
+    .appointment-type-links {
+      gap: var(--gap-base);
+      padding-left: var(--padding-xl);
+      padding-top: var(--padding-52xl);
+      padding-bottom: var(--padding-52xl);
+      box-sizing: border-box;
+      min-width: 100%;
+    }
+    .book-your-appointment {
+      font-size: 2.125rem;
+      line-height: 2.5rem;
+    }
+    .department {
+      font-size: var(--font-size-3xl);
+      line-height: 1.688rem;
+    }
+    .department-input {
+      flex-wrap: wrap;
+    }
+    .department-selection {
+      height: auto;
+    }
+    .hospital {
+      font-size: var(--font-size-3xl);
+      line-height: 1.688rem;
+    }
+    .provider-type-items {
+      height: auto;
+    }
+    .doctor,
+    .select-appointment-date-container {
+      font-size: var(--font-size-3xl);
+      line-height: 1.688rem;
+    }
+    .date-value-wrapper {
+      gap: var(--gap-6xl);
+    }
+    .date-input {
+      flex-wrap: wrap;
+    }
+    .back,
+    .next {
+      font-size: var(--font-size-base);
+      line-height: 1.188rem;
+    }
+    .provider-type-input {
+      gap: 1.188rem;
+    }
+    .hospitals-near-you {
+      font-size: var(--font-size-lg);
+      line-height: 1.375rem;
+    }
+    .apollo-hospital {
+      font-size: var(--font-size-lgi);
+      line-height: 1.438rem;
+    }
+  }
