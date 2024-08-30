@@ -21,6 +21,10 @@ body {
     margin: 0 auto;
 }
 
+.nav-links :nth-child(1){
+    font-weight: bold;
+  }
+
 .upper-navbar {
     display: flex;
     justify-content: space-between;
@@ -142,9 +146,9 @@ body {
     margin-bottom: 20px;
 }
 
-.slider > p{
+.slider > p {
     color: var(--black);
-    padding: 35px;
+    padding: 3px 35px;
 }
 
 .titleText {
@@ -181,6 +185,35 @@ body {
 .flex{
     display: flex;
     flex-direction: column;
+}
+
+.arrow-container{
+    margin-left: 2rem;
+    border: 1px solid black;
+    height: 58px;
+    width: 350px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-container span{
+    margin-left: 10px;
+}
+
+.sphere{
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    background-color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sphere > img{
+    width: 37px;
 }
 
 .service-container {
