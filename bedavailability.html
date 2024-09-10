@@ -4,17 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OPD Registration</title>
-  <link rel="stylesheet" href="styles/Appointment.css">
+  <title>Bed Availability</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="styles/bedavailability.css">
 </head>
 
 <body>
-
-  <!-- Upper Navbar: Logo, Text, and Right Images -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom up_nav">
-    <div class="container navbar-upper">
+    <div class="container-fluid navbar-upper">
       <!-- Left: Logo and Text -->
       <div class="d-flex align-items-center">
         <!-- Logo -->
@@ -37,7 +34,7 @@
 
   <!-- Lower Navbar: Logo, Centered Links, and Login in Hamburger -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary down_nav">
-    <div class="container">
+    <div class="container-fluid">
       <!-- Left: Logo -->
       <a class="navbar-brand" href="index.html">
         <img src="images/SarvaSvasthaLogo.svg" alt="Government Logo">
@@ -72,89 +69,83 @@
       </div>
 
       <!-- Right: Login Button for larger screens -->
-      <a class="btn btn-custom nav-link desktop-only" href="#">Login/Register</a>
+      <a class="btn btn-custom nav-link desktop-only desk_btn" href="#">Login/Register</a>
     </div>
   </nav>
 
-
-  <div class="form-container">
-    <h1>OPD Registration</h1>
-
-    <div class="registration-box">
-
-      <div class="headers">
-        <div class="first">New Appointment</div>
-        <div class="second">Appointment Status</div>
-      </div>
-
-      <div class="separator">
-        <div class="part-one"></div>
-        <div class="part-two"></div>
-      </div>
-
-      <div class="tabs">
-        <div class="tab active"><div class="circle">1</div> Select Hospital</div>
-        <div class="tab"><div class="circle">2</div> Personal Details</div>
-        <div class="tab"><div class="circle">3</div> Payment</div>
-        <div class="search-button"><input type="text" placeholder="Search"
-          name="search"></div>
-      </div>
-
-      <div class="herosection">
-        <div class="lower-forms-container">
-
-          <form class="appointment-form">
-            <label for="department">Department</label>
-            <select id="department" name="department">
-              <option value="" selected="selected">Select Department</option>
-            </select>
-  
-            <label for="hospital">Hospital/Clinic</label>
-            <select id="hospital" name="hospital">
-              <option value="" selected="selected"> Select Hospital</option>
-            </select>
-  
-            <label for="doctor">Doctor</label>
-            <select id="doctor" name="doctor">
-              <option value="" selected="selected">Select doctor</option>
-            </select>
-  
-            <label for="date">Select Date</label>
-            <input type="date" name="date" id="date" required />
-  
-            <div class="form-buttons">
-              <button type="submit" class="next-button">Proceed to pay</button>
-            </div>
-          </form>
-
+  <main>
+    <div class="main-container">
+      <div class="up">
+        <div class="form-section">
+          <label for="hospital"><span class="red">*</span>Hospital</label>
+          <select id="hospital">
+            <option value="">Select Hospital</option>
+            <option value="apollo">Apollo Hospital</option>
+            <option value="fortis">Fortis Hospital</option>
+            <option value="max">Max Hospital</option>
+          </select>
+          <button class="check-btn">Check Availability</button>
         </div>
+        <div class="image-section">
+          <img src="images/hospital.png" alt="Hospital" class="hospital-image">
+        </div>
+      </div>
 
 
-        <div class="recommendation">
-          <h2>Recommended:</h2>
-          <div class="recommendation-card">
+
+        <h2>Recommended:</h2>
+        <div class="cards">
+          <div class="card">
             <h3>Apollo Hospital</h3>
             <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
             <p>Contact: 00XX00XX</p>
           </div>
-          <div class="recommendation-card">
+          <div class="card">
             <h3>Apollo Hospital</h3>
             <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
             <p>Contact: 00XX00XX</p>
           </div>
-          <a href="#" class="see-more">See more</a>
+          <div class="card">
+            <h3>Apollo Hospital</h3>
+            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+            <p>Contact: 00XX00XX</p>
+          </div>
         </div>
-      </div>
+        <a href="#" class="see-more">See more</a>
+
 
 
     </div>
-  </div>
+    <!-- <div class="recommended-section">
+      <h2>Recommended:</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Apollo Hospital</h3>
+          <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+          <p>Contact: 00XX00XX</p>
+        </div>
+        <div class="card">
+          <h3>Apollo Hospital</h3>
+          <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+          <p>Contact: 00XX00XX</p>
+        </div>
+        <div class="card">
+          <h3>Apollo Hospital</h3>
+          <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
+          <p>Contact: 00XX00XX</p>
+        </div>
+      </div>
+      <a href="#" class="see-more">See more</a>
+    </div> -->
+  </main>
 
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  </div>
-
-
-  <script src="js/appointment.js"></script>
 </body>
 
 </html>

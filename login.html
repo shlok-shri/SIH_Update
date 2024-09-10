@@ -1,105 +1,107 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="styles/login-global.css" />
-    <link rel="stylesheet" href="styles/login-index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
-    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/utility.css" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Login</title>
   </head>
   <body>
-  
-
-
-     
-
-      <div class="upper-navbar">
-        <div class="navbar-section">
-            <img src="images/image 4.png" alt="India Emblem" class="emblem">
-            <div class="text">
-                <h2>Government of National Capital Territory</h2>
-                <p>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom up_nav">
+        <div class="container navbar-upper">
+          <!-- Left: Logo and Text -->
+          <div class="d-flex align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="images/Image 4.png" alt="Government Logo">
+            </a>
+            <!-- Navbar Title -->
+            <div class="navbar-text">
+              <div>Government of National Capital Territory</div>
+              <div>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</div>
             </div>
-        </div>
-        <div class="navbar-section">
-            <img src="images/Frame 60.png" alt="Delhi Government Logo" class="delhi-logo">
-            <img src="images/image 6.png" alt="Election Logo" class="election-logo">
-        </div>
-    </div>
-
-    <header class="navbar">
-        <div class="brand">
-            <div class="brand-name">Sarva</div>
-            <div class="brand-tagline">Svastha</div>
-        </div>
-        <nav class="nav-links">
-            <a href="index.html" class="nav-link nav-link-home">Home</a>
-            <a href="appointment.html" class="nav-link nav-link-appointment">OPD Registration</a>
-            <a href="#" class="nav-link nav-link-help">Help Support</a>
-        </nav>
-        <div class="nav-right">
-            <div class="login-button">
-                <a href="login.html" class="nav-link nav-link-home login-text">Login/Register</a>
-                <!-- <span class="login-text">Login/Register</span> -->
-            </div>
-            <div class="burger"><img src="images/hamburger.svg" alt="HamBurger" srcset=""></div>
-        </div>
-    </header>
-
-
-      <main class="content">
-
-        <div class="left">
-          <div class="for-hospitalsclinics">
-            <span class="for">For </span>
-            <span class="hospitalsclinics">Hospitals/Clinics</span>
           </div>
-            <div class="a-digitalized-platform">
-              A digitalized platform to mange patient’s appointment, hospital’s
-              inventory and bed management.
-            </div>
-              <div class="login">Login</div>
-            <div class="didnt-register-yourself-container">
-              <span>Didn’t register yourself? </span>
-              <b>Register</b>
+          <!-- Right: Two Images -->
+          <div class="navbar-upper-right d-flex align-items-center">
+            <img src="images/Image 6.png" alt="Image 1">
+            <img src="images/Frame 60.png" alt="Image 2">
           </div>
         </div>
+      </nav>
+    
+      <!-- Lower Navbar: Logo, Centered Links, and Login in Hamburger -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary down_nav">
+        <div class="container">
+          <!-- Left: Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="images/SarvaSvasthaLogo.svg" alt="Government Logo">
+          </a>
+    
+          <!-- Toggler/collapsable Button for mobile view -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Center and Right: Navbar Links in Collapsible Menu -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="appointment.html">OPD Registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bed Availability</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help/Support</a>
+              </li>
+              <!-- Login Button inside the collapsible menu for smaller screens -->
+              <li class="nav-item mt-2 mt-lg-0">
+                <a class="btn btn-custom nav-link mobile-only inside_login" id="inside_button" href="#">Login/Register</a>
+              </li>
+            </ul>
+          </div>
+    
+          <!-- Right: Login Button for larger screens -->
+          <a class="btn btn-custom nav-link desktop-only" href="#">Login/Register</a>
         </div>
+      </nav>
 
-        <div class="right">
-          <div class="headin">
-            <h1 class="for-patients">
-              <span>For </span>
-              <span class="patients">Patients</span>
-            </h1>
-          </div>
+      <div class="hospitalflex">
+        <div class="forhc">
+<h class="For">For</h>
+<h class="HC">Hospitals/Clinic</h>
+</div>
+<div class="text">
+    <div class="line1">A digitalized platform to manage patient’s</div>
+    <div class="line2" >appointment, hospital’s inventory and bed </div>
+    <div class="line3">management.</div>
+</div>
 
-          <div class="book-and-manage">
-            Book and manage your medical appointment, without waiting in the
-            long queues
-          </div>
+<div>
+    <button class="login">Login</button>
+</div>
+<div>
+<div class="line4">
+Did'nt Register yourself?
+</div>
+<div class="reg">Register</div>
+</div>
+      </div>
 
-          <div class="login-wrapper">
-            <a href="appointment.html"><div class="login2">Login</div></a>
-          </div>
-
-          <div class="dont-have-an-container">
-            <span>Don’t have an account? </span>
-            <b>Sign Up</b>
-          </div>
-
-
-
-        </div>
-
-      </main>
-
-    <!-- Footer -->
-      <!-- <footer class="background"></footer> -->
-    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
