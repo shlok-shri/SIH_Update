@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OPD Registration</title>
-  <link rel="stylesheet" href="styles/Appointment.css">
+  <link rel="stylesheet" href="styles/appointment-2.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -75,8 +75,6 @@
       <a class="btn btn-custom nav-link desktop-only" href="login.html">Login/Register</a>
     </div>
   </nav>
-
-
   <div class="form-container">
     <h1>OPD Registration</h1>
 
@@ -93,75 +91,50 @@
       </div>
 
       <div class="tabs">
-        <div class="tab active"><div class="circle">1</div> Select Hospital</div>
-        <div class="tab"><div class="circle">2</div> Personal Details</div>
+        <div class="tab"><div class="circle">1</div> Select Hospital</div>
+        <div class="tab active"><div class="circleactive">2</div> Personal Details</div>
         <div class="tab"><div class="circle">3</div> Payment</div>
-        <div class="search-button"><input type="text" placeholder="Search"
-          name="search"></div>
       </div>
-
       <div class="herosection">
         <div class="lower-forms-container">
-
-          <form class="appointment-form">
-            <label for="department">Department</label>
-            <select id="department" name="department">
-              <option value="" selected="selected">Select Department</option>
-            </select>
-  
-            <label for="hospital">Hospital/Clinic</label>
-            <select id="hospital" name="hospital">
-              <option value="" selected="selected"> Select Hospital</option>
-            </select>
-  
-            <label for="doctor">Doctor</label>
-            <select id="doctor" name="doctor">
-              <option value="" selected="selected">Select doctor</option>
-            </select>
-  
-            <label for="date">Select Date</label>
-            <input type="date" name="date" id="date" required />
-  
-            <div class="form-buttons">
-              <button type="submit" class="next-button"><a href="appointment-2.html">Proceed to pay</a></button>
-            </div>
-          </form>
-
-        </div>
-
-
-        <div class="recommendation">
-          <h2>Recommended:</h2>
-          <div class="recommendation-card">
-            <h3>Apollo Hospital</h3>
-            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
-            <p>Contact: 00XX00XX</p>
-          </div>
-          <div class="recommendation-card">
-            <h3>Apollo Hospital</h3>
-            <p>Address: 59 street, Manik bagh, Bilawali sector, near IET campus, New Delhi</p>
-            <p>Contact: 00XX00XX</p>
-          </div>
-          <a href="#" class="see-more">See more</a>
-        </div>
+            <form class="appointment-form" >
+                <label for="patientname">Patient Name</label>
+                <input type="text" name="patientname" id="patientname" placeholder="Enter Patient Name" required />
+        
+                <label for="emailId">Email ID</label>
+                <input type="email" name="emailId" id="emailId" placeholder="Enter Email ID" required />
+        
+                <label for="mobile">Mobile</label>
+                <input type="number" name="mobile" id="mobile" placeholder="Enter Mobile Number" required />
+        
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" placeholder="Enter Age" required />
+        
+                <label for="gender" class="gen">Gender</label>
+                <input type="text" name="Gender" id="gender" placeholder="Enter Gender" required />
+        
+                <div class="form-buttons">
+                  <button class="back">Back</button>
+                  <button type="submit" class="next-button">Proceed to pay</button>
+                 
+                </div>
+      </form>
       </div>
 
-
-    </div>
-  </div>
-
-
-  </div>
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-  <script src="js/appointment.js"></script>
+      <div class="rightpart">
+      <img class="img" src="https://previews.123rf.com/images/microne/microne2004/microne200400053/145226463-medical-clinic-interior-background-with-people-cartoon-characters-mother-and-child-at-doctors.jpg">
+           <div class="para">
+            <div class="line1">**On average, patients spend approximately 59.96 minutes in the
+                </div>
+              <div class="line2"> OPD premises. Out of this time, 84.1% is spent waiting, while
+                </div>
+                <div class="line3">15.9% is spent with the consultant.**
+                 </div>
+                 </div>
+                 </div>
+          </div>
+</div>
+</div>
 </body>
 
 </html>
