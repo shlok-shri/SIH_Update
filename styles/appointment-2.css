@@ -320,6 +320,11 @@ label {
     }
       
 
+.next-button a{
+    text-decoration: none;
+    color: white;
+}
+
       /* Responsive Design */
 @media (max-width: 768px) {
     .registration-box {
