@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --seccolor : #ebebeb;
+    --color : #004094;
+    --black : #000000;
+    --green : #69D876;
+    font-family: 'Poppins';
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--seccolor);
+    color: #333;
+}
+
 .navbar-brand img {
     height: 50px;
     /* Adjust logo height */
@@ -15,10 +33,12 @@
 }
 
 .btn-custom {
-    border-color: white;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 5px;
+    /* border-color: white; */
+    /* color: white; */
+    background: #EBEBEB !important;
+    padding: 8px 20px !important;
+    color: #004094 !important;
+    border-radius: 11px !important;
 }
 
 .navbar-upper {
@@ -26,6 +46,19 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.down_nav{
+    background-color: var(--color) !important;
+}
+
+.desk_btn{
+    background-color: var(--seccolor);
+    color: var(--color);
+}
+
+.red{
+    color: red;
 }
 
 .navbar-upper-right img {
@@ -47,7 +80,7 @@
     flex-grow: 1;
 }
 
-
+/* Responsive design */
 @media (max-width: 992px) {
     .navbar-upper-right img {
         display: none;
@@ -102,8 +135,10 @@
         /* Show the desktop button on larger screens */
     }
 }
+
 #inside_button {
     color: var(--color) !important;
+    background-color: var(--seccolor);
 }
 
 body {
